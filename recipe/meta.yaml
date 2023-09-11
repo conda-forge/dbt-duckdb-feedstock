@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -26,6 +26,10 @@ requirements:
 test:
   imports:
     - dbt
+    - dbt.adapters.duckdb
+    - dbt.adapters.duckdb.environments
+    - dbt.adapters.duckdb.plugins
+    - dbt.include.duckdb
   commands:
     - pip check
   requires:
@@ -40,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - AlexanderThebeltQC
+    - SaravananSathyanandhaQC
