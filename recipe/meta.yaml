@@ -26,6 +26,10 @@ requirements:
 test:
   imports:
     - dbt
+    - dbt.adapters.duckdb
+    - dbt.adapters.duckdb.environments
+    - dbt.adapters.duckdb.plugins
+    - dbt.include.duckdb
   commands:
     - pip check
   requires:
