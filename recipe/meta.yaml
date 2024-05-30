@@ -1,5 +1,5 @@
 {% set name = "dbt-duckdb" %}
-{% set version = "1.7.5" %}
+{% set version = "1.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7ff2fc21a656f61c30b30ff44865f02de6818d950fe99a475245546d63d22b98
+  sha256: 4a7d20647a7a0300a205d25cd649268a2cdafb3550e690255def1fb35d286744
 
 build:
   noarch: python
