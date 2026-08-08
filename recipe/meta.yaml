@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools >=61.2
     - pbr >=1.9
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - dbt-common >=1,<2
     - dbt-adapters >=1,<2
     - dbt-core >=1.8.0
@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/duckdb/dbt-duckdb
