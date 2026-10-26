@@ -1,13 +1,13 @@
 {% set name = "dbt-duckdb" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 4b087557e8559e2c141a8daae28f4a832a06f425d0b4567eca7c8ffb635cd0fe
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 4fe54c1aea840ccf4725a01851049be2bbe2d4c023faaad044c616505c780b45
 
 build:
   noarch: python
